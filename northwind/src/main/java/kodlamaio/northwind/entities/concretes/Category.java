@@ -30,7 +30,7 @@ public class Category {
 	@Column(name = "category_name")
 	private String categoryName;
 
-	// Categorinin sahip olduğu ürünler //FK var.
+	// Categorinin sahip olduğu ürünler var ondan List //FK var.
 	// Ana tablo burası o yüzden burda yapıyoruz.
 	@OneToMany(mappedBy = "category") // product tablosundaki category alanı ile ilişkilendirildi.
 	private List<Product> products; // Tablo gibi düşün.
